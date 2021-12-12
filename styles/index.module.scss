@@ -1,0 +1,25 @@
+@import "@/styles/var.module.scss";
+.Background {
+  height: 90vh;
+  width: auto;
+  overflow: hidden;
+  background-color: $Main;
+  background-image: url("/backgrounds/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    border: solid 1px rgb(70, 70, 70);
+    background-color: rgba($color: $Main, $alpha: 0.75);
+  }
+}
+
+.Title {
+  font-size: large;
+}

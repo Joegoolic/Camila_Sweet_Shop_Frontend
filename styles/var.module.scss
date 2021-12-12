@@ -1,0 +1,77 @@
+/* Colors */
+$Midnight: #1e1f26;
+$Main: #efe1e1;
+$Text: whitesmoke;
+$Grey: rgb(119, 119, 119);
+$Text: whitesmoke;
+$ButtonText: rgba(0, 3, 168, 0.897);
+$Grey: rgb(119, 119, 119);
+
+/* Screen Sizes */
+$UHD_width_max: 4000px;
+$UHD_width_min: 1921px;
+
+$FHD_width_max: 1920px;
+$FHD_width_min: 1367px;
+
+$HD_width_max: 1366px;
+$HD_width_min: 1025px;
+
+$Tablet_width_max: 1024px;
+$Tablet_width_min: 500px;
+
+$Mobile_width_max: 499px;
+$Mobile_width_min: 1px;
+
+@mixin FHD {
+  @media screen and (max-width: #{$FHD_width_max})and(min-width: #{$FHD_height_min}) {
+    @content;
+  }
+}
+@mixin HD {
+  @media screen and (max-width: #{$HD_width_max})and(min-width: #{$HD_width_min}) {
+    @content;
+  }
+}
+@mixin Short_Wide {
+  @media screen and (max-height: 800px) and (min-height: 600px) and(max-width: 1600px) and (min-width: 1000px) {
+    @content;
+  }
+}
+@mixin Tablet {
+  @media screen and (max-width: #{$Tablet_width_max})and(min-width: #{$Tablet_width_min}) {
+    @content;
+  }
+}
+@mixin Mobile {
+  @media screen and (max-width: #{$Mobile_width_max}) and (min-width: #{$Mobile_width_min}) {
+    @content;
+  }
+}
+@mixin Tablet_Mobile {
+  @media screen and (max-width: #{$Tablet_width_max})and (min-width: #{$Mobile_width_min}) {
+    @content;
+  }
+}
+
+//Animations
+@keyframes cart_animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

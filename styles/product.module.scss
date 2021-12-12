@@ -1,0 +1,141 @@
+@import "@/styles/var.module.scss";
+.product_section {
+  margin-bottom: 3vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: clamp(28vw, 30vw, 45vw);
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.product_section::-webkit-scrollbar {
+  display: none;
+}
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  border-radius: 10%;
+  gap: 1rem;
+  //width: clamp(28vw, 30vw, 45vw);
+}
+.top_flex_container {
+  display: flex;
+}
+.Image_flex_container {
+  flex: 0 1 auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  margin-top: 4%;
+  margin-left: 4%;
+  border-radius: 10%;
+  img {
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+  }
+}
+.name_and_details {
+  margin: auto;
+  flex: 0 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      p {
+        word-wrap: break-word;
+        line-break: auto;
+      }
+      a:hover {
+        animation-name: cart_animate;
+        animation-duration: 2s;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 1%;
+      }
+      h2:hover {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+.bottom_flex_container {
+  flex: 0 1 100%;
+  display: flex;
+  margin: auto;
+
+  .button_container {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    //width: fit-content;
+    button {
+      display: flex;
+      justify-content: center;
+      color: rgb(95, 104, 192);
+      background-color: white;
+      border-radius: 20px;
+      border-color: rgb(95, 104, 192);
+      padding: 1rem;
+      font-size: 1rem;
+      max-width: max-content;
+      margin-bottom: 1rem;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+    }
+    button:hover {
+      background-color: rgb(95, 104, 192);
+      color: white;
+      transition: 0.55s;
+    }
+    h3 {
+      //min-width: 300px;
+      //width: 20vw;
+      width: clamp(28vw, 30vw, 45vw);
+    }
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Availability_Available {
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Availability_NotAvailable {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Availability_Comingsoon {
+    color: rgb(6, 6, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.Price {
+  font-size: 1.75rem;
+  color: black;
+}

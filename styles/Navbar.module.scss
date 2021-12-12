@@ -1,0 +1,126 @@
+@keyframes cart_animate {
+  0% {
+    left: 10px;
+  }
+  25% {
+    left: 15px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  background-color: #efe1e1;
+  width: 100vw;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  .logo {
+    flex: 80;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    img {
+      height: 10vh;
+      width: auto;
+    }
+  }
+  .drop_down {
+    flex: 10;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    .drop_down_title {
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: 1.7rem;
+      align-items: center;
+      justify-content: center;
+      .drop_down_title:hover {
+        filter: brightness(1.3);
+      }
+    }
+    .drop_down_title:hover {
+      animation-name: cart_animate;
+      animation-duration: 2s;
+    }
+  }
+  .cart {
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 10;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    svg {
+      padding: 0.25rem;
+      //padding: 30px;
+      height: 4vh;
+      width: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    svg:hover {
+      animation-name: cart_animate;
+      animation-duration: 2s;
+      filter: brightness(1.3);
+    }
+  }
+  @keyframes cart_animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-15deg);
+    }
+    60% {
+      transform: rotate(15deg);
+    }
+    80% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .cart:hover {
+    filter: brightness(1.3);
+  }
+}
+.drop {
+  display: block;
+  margin-left: 80%;
+  margin-right: 10%;
+  width: 10vw;
+  background-color: #f9f9f9;
+  min-width: 8vw;
+  box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+
+  .drop_down_content {
+    position: absolute;
+    z-index: 4;
+    margin-top: -3vh;
+    background-color: #f9f9f9;
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    a:hover {
+      filter: brightness(1.3);
+      animation-duration: 2s;
+      border: solid 3px rgb(99, 235, 212);
+    }
+  }
+}

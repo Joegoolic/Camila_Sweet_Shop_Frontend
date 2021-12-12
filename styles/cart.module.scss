@@ -1,0 +1,197 @@
+@import "@/styles/var.module.scss";
+.Cart_main {
+  height: 90vh;
+  overflow: scroll;
+  background-image: url("/backgrounds/Polkadots.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.Cart_main::-webkit-scrollbar {
+  display: none;
+}
+
+.Cart_border {
+  margin: 0 10%;
+  margin-bottom: 15vh;
+}
+
+.Cart_title_flex {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.Cart_title {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Cart_item {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10% 0 0 10%;
+}
+.Cart_item_img {
+  flex: 0 1 auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.Cart_item_manager {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  align-content: center;
+  justify-content: center;
+  width: clamp(10vw, 40vw, 35vw);
+}
+.Cart_item_name {
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+  margin-top: 2%;
+}
+.Cart_item_count {
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 10vh;
+  font-size: 1.75rem;
+}
+.count {
+  font-size: 2rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.count_plus {
+  line-height: 0px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgba(239, 225, 225, 0.5);
+}
+.count_plus:hover {
+  line-height: 0px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgba(239, 225, 225, 0.5);
+  transform: scale(1.15);
+}
+.count_minus {
+  line-height: 0px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgba(239, 225, 225, 0.5);
+}
+.count_minus:hover {
+  line-height: 0px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgba(239, 225, 225, 0.5);
+  transform: scale(1.15);
+}
+
+.Cart_item_stats {
+  flex: 0 1 auto;
+  flex-direction: column;
+  min-width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Remove_button {
+  display: flex;
+  flex: 0 1 auto;
+  font-size: 1.5rem;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  width: clamp(5vw, 10vw, 13vw);
+  border-radius: 10%;
+  max-height: max-content;
+  width: max-content;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: 2px solid $Main;
+  margin-bottom: 2%;
+  background-color: rgba(239, 225, 225, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.Remove_button:hover {
+  background-color: rgb(255, 0, 0);
+  color: whitesmoke;
+  border-color: rgb(255, 0, 0);
+  transition: ease 0.5s;
+}
+.Cart_bottom {
+  display: flex;
+  flex: 0 1 auto;
+  background-color: $Main;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  min-height: 10vh;
+  //position: sticky;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  .Cart_totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    margin: auto;
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+  button {
+    font-size: 1.5rem;
+    border-radius: 10%;
+    max-height: max-content;
+    width: max-content;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px solid $Main;
+    margin-bottom: 2%;
+    background-color: rgba(239, 225, 225, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: auto;
+  }
+  button:hover {
+    background-color: black;
+    color: $Main;
+    border-color: black;
+    transition: ease 0.5s;
+  }
+}
+.Cart_empty_h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(239, 225, 225, 0.95);
+  border-radius: 10px;
+  margin-top: 30vh;
+}

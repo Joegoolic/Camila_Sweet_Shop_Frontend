@@ -1,0 +1,20 @@
+.bg {
+  z-index: 0;
+  position: relative;
+}
+.sections {
+  margin: 0 10% 0;
+  width: 80vw;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  height: 80vh;
+  z-index: 1;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+.sections::-webkit-scrollbar {
+  display: none;
+}

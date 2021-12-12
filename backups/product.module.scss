@@ -1,0 +1,150 @@
+.product_section {
+  border: 1px solid #f9f9f9;
+  height: 25vh;
+  background-color: white;
+  z-index: 2;
+  .flex_container {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+  .Image_flex_container {
+    flex: 25%;
+    height: 100%;
+    width: auto;
+    object-fit: fill;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  .Image_flex_container:hover {
+    z-index: 5;
+    height: 400px;
+    width: 500px;
+  }
+  .Center_flex_container {
+    flex: 45%;
+
+    .name_and_details {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      ul {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        li {
+          margin: 10% 10% 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover {
+            animation-name: cart_animate;
+            animation-duration: 2s;
+          }
+          h2 {
+            text-decoration: underline;
+            font-size: 1.5rem;
+          }
+          h2:hover {
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+  .button_container {
+    flex: 30%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    ul {
+      margin-top: 5%;
+      display: block;
+      justify-content: center;
+      li {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        button {
+          margin-top: 50%;
+          display: flex;
+          justify-content: center;
+          color: rgb(95, 104, 192);
+          background-color: white;
+          border-radius: 20px;
+          padding: 10% 10%;
+          width: 7vw;
+          font-size: 1rem;
+        }
+        button:hover {
+          background-color: rgb(95, 104, 192);
+          color: white;
+          transition: 0.75s;
+        }
+      }
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Availability_Available {
+      color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Availability_NotAvailable {
+      color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Availability_Comingsoon {
+      color: rgb(6, 6, 228);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@keyframes cart_animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,38 @@
+.bg {
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  .sections {
+    overflow-y: scroll;
+    height: 90vh;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+  .row {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 99vw;
+    justify-content: center;
+    align-content: center;
+  }
+  .column {
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
