@@ -28,7 +28,7 @@ export default function Modal({show,onClose}) {
                     an e-Commerce site. If you enjoyed using this website and thought 
                     its layout was intuitive please consider me for a position, or to 
                     freelance and create you a custom website. You can send me an email 
-                    directly at <a href='https://www.josephgoolic.com' target='_blank'>josephgoolic.com</a>
+                    directly at <a href='https://www.josephgoolic.com' rel="noreferrer" target='_blank'>josephgoolic.com</a>
                     </h3>
                     <h3>Thank you!</h3>
                 </div>
