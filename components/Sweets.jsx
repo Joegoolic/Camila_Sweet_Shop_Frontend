@@ -38,7 +38,7 @@ function Sweets({ prod }) {
         <div className={ProductStyles.top_flex_container}>
           <div className={ProductStyles.Image_flex_container}>
             <Link href={`/store/${prod.slug}`}>
-              <Image width={300} height={300}className={ProductStyles.image} src={prod.Photo} />
+              <Image alt="" title=""  width={200} height={200} objectFit="contain" className={ProductStyles.image} src={prod.Photo} />
             </Link>
           </div>
           <div className={ProductStyles.name_and_details}>
