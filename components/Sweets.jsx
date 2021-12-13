@@ -4,6 +4,7 @@ import ProductStyles from "@/styles/product.module.scss";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Link from "next/link";
+import Image from "next/image";
 
 function Sweets({ prod }) {
   let Avail;
@@ -37,7 +38,7 @@ function Sweets({ prod }) {
         <div className={ProductStyles.top_flex_container}>
           <div className={ProductStyles.Image_flex_container}>
             <Link href={`/store/${prod.slug}`}>
-              <img className={ProductStyles.image} src={prod.Photo} />
+              <Image width={300} height={300}className={ProductStyles.image} src={prod.Photo} />
             </Link>
           </div>
           <div className={ProductStyles.name_and_details}>
