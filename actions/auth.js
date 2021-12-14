@@ -176,7 +176,7 @@ export const guest_register =()=> async dispatch=>{
             dispatch({
                 type:REGISTER_FAIL
         });
-        dispatch(guest_register());
+        //dispatch(guest_register());
         }
     } catch(err) {
         dispatch({
