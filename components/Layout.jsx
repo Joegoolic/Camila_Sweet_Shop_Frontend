@@ -18,12 +18,12 @@ export default function Layout({ children,menuOpen,setMenuOpen,title,keywords,de
         }, [dispatch]);
     useEffect(() => {
         const timer = setTimeout(() => {
-            if(isAuthenticated===false){
+            if(isAuthenticated === false){
                 if (dispatch && dispatch !== null && dispatch !== undefined){
                     dispatch(guest_register());
                 }
             }
-        },3000);
+        },10);
         return () => clearTimeout(timer);
         }, [dispatch,isAuthenticated]);
     return (

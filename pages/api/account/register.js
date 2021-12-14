@@ -27,6 +27,7 @@ export default async (req, res) => {
             },
             body: body
         })
+        console.log(body)
 
         const data = await apiRes.json();
 
