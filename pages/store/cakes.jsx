@@ -62,7 +62,7 @@ export default function Store(products) {
         </div>
         );
     }
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const res = await fetch(`${API_URL}/api/Cakes/`);
     const products = await res.json();
     return{
