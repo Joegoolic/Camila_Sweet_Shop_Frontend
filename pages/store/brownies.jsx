@@ -69,8 +69,6 @@ export async function getServerSideProps(){
         props:{
             products
         },
-        //Updates on this intervals every x seconds
-        revalidate: 10000
         
     };
 }

@@ -68,7 +68,5 @@ export async function getServerSideProps(){
     const products = await res.json();
     return{
         props:{products},
-        revalidate: 10000
-        
     };
 }
