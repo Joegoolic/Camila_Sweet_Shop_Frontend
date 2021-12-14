@@ -11,7 +11,7 @@ export default function Layout({ children,menuOpen,setMenuOpen,title,keywords,de
     const user = useSelector(state => state.auth.user);
     const loading = useSelector(state => state.auth.loading);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
-    useEffect(() => {
+    /* useEffect(() => {
         if (dispatch && dispatch !== null && dispatch !== undefined){
             dispatch(request_refresh());
         }
@@ -25,7 +25,7 @@ export default function Layout({ children,menuOpen,setMenuOpen,title,keywords,de
             }
         },10);
         return () => clearTimeout(timer);
-        }, [dispatch,isAuthenticated]);
+        }, [dispatch,isAuthenticated]); */
     return (
         <div>
             <Head>
