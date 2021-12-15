@@ -11,6 +11,21 @@ export default function Layout({ children,menuOpen,setMenuOpen,title,keywords,de
     const user = useSelector(state => state.auth.user);
     const loading = useSelector(state => state.auth.loading);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+    useEffect(() => {
+        if (dispatch && dispatch !== null && dispatch !== undefined){
+            dispatch(request_refresh());
+        }
+        }, [dispatch]);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if(isAuthenticated === false){
+                if (dispatch && dispatch !== null && dispatch !== undefined){
+                    dispatch(guest_register());
+                }
+            }
+        },10);
+        return () => clearTimeout(timer);
+        }, [dispatch,isAuthenticated]);
     
     return (
         <div>
@@ -30,18 +45,4 @@ Layout.defaultProps ={
     description:'Best Sweets You\'ll ever taste',
     keywords:'Baked goods'
 }
-/* useEffect(() => {
-        if (dispatch && dispatch !== null && dispatch !== undefined){
-            dispatch(request_refresh());
-        }
-        }, [dispatch]);
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            if(isAuthenticated === false){
-                if (dispatch && dispatch !== null && dispatch !== undefined){
-                    dispatch(guest_register());
-                }
-            }
-        },10);
-        return () => clearTimeout(timer);
-        }, [dispatch,isAuthenticated]); */
+/*  */
