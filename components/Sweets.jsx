@@ -40,7 +40,7 @@ function Sweets({ prod }) {
             <Link href={`/store/${prod.slug}`}>
             {/* <Image alt="" title=""  width={200} height={200} objectFit="contain" className={ProductStyles.image} src={prod.Photo} /> */}
             {/* <img className={ProductStyles.image} src={prod.Photo} /> */}
-            <img className={ProductStyles.image} src="http://67.250.105.65:8000/media/productImages/Donut.png/"/>
+            <img className={ProductStyles.image} src="http://67.250.105.65:8000/media/productImages/Donut.png"/>
             </Link>
           </div>
           <div className={ProductStyles.name_and_details}>
