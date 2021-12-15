@@ -2,7 +2,7 @@ import { useEffect,useState} from 'react';
 import Link from 'next/link';
 import {useSelector, useDispatch} from 'react-redux';
 import { getcart,remove_from_cart,add_quantity,remove_quantity } from "../../actions/cart";
-import {API_URL} from '../../config/index';
+import {PHOTOS_URL} from '../../config/index';
 import Styles from '@/styles/cart.module.scss';
 import {AiFillPlusCircle ,AiFillMinusCircle} from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
@@ -129,7 +129,7 @@ function Cart(){
             cartItems.map((cartitem)=>(
               <div key = {cartitem.id} id = {cartitem.id+'all'}>
                 <div className={Styles.Cart_item}>
-                  <img className={Styles.Cart_item_img} src= {API_URL + cartitem.product_image}/>
+                  <img className={Styles.Cart_item_img} src= {PHOTOS_URL + cartitem.product_image}/>
                   <div className={Styles.Cart_item_manager}>
                     <div className={Styles.Cart_item_name}>{cartitem.product_name}</div>
                     <div className={Styles.Cart_item_count} >
