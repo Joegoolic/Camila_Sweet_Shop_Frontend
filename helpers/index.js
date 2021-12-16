@@ -1,4 +1,4 @@
 
 export function urlchanger(url){
-    return url.replace('localhost', '67.250.105.65');
+    return url.replace('http://localhost:8000', 'https://www.milassweetshopapi.com');
 }

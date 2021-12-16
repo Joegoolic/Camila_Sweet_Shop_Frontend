@@ -6,7 +6,7 @@ export default function ProductPage({prod}) {
             <div className={IndiStyles.product_section_inner}>
                 <div className={IndiStyles.product_section_top}>
                     <div className={IndiStyles.product_section_top_left}>
-                        <img src={prod.Photo}/>
+                        <img src={urlchanger(prod.Photo)}/>
                     </div>
                     <div className={IndiStyles.product_section_top_mid}>
                         <h3>
@@ -40,6 +40,3 @@ export async function getServerSideProps({query:{slug}}) {
         props:{prod}
     }
 }
-
-{/* <h2>{prod.Product_type}</h2> */}
-{/* <h2>{prod.slug}</h2> */}
