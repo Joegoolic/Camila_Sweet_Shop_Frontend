@@ -54,7 +54,7 @@ function Sweets({ prod }) {
         <div className={ProductStyles.top_flex_container}>
           <div className={ProductStyles.Image_flex_container}>
             <Link href={`/store/${prod.slug}`}>
-            <Image className={ProductStyles.image} src={urlchanger(prod.Photo)} height='500' width= '500' alt='A Tasty Treat' />        
+            <img className={ProductStyles.image} src={urlchanger(prod.Photo)} alt='A Tasty Treat' />        
             </Link>
           </div>
           <div className={ProductStyles.name_and_details}>
