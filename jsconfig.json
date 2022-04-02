@@ -7,6 +7,7 @@
             "@/config/*":["config/*"],
             "@/public/*":["public/*"],
             "@/helpers/*":["helpers/*"],
+            "@/actions/*":["actions/*"],
         }
     }
 }

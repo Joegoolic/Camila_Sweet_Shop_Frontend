@@ -87,7 +87,7 @@
     align-items: center;
     gap: 1rem;
     //width: fit-content;
-    button {
+    /* button {
       display: flex;
       justify-content: center;
       color: rgb(95, 104, 192);
@@ -104,7 +104,7 @@
       background-color: rgb(95, 104, 192);
       color: white;
       transition: 0.55s;
-    }
+    } */
     h3 {
       //min-width: 300px;
       //width: 20vw;
@@ -139,3 +139,57 @@
   font-size: 1.75rem;
   color: black;
 }
+.Available {
+  display: flex;
+  justify-content: center;
+  color: rgb(95, 104, 192);
+  background-color: white;
+  border-radius: 20px;
+  border-color: rgb(95, 104, 192);
+  padding: 1rem;
+  font-size: 1rem;
+  max-width: max-content;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+}
+.Available:hover {
+  background-color: rgb(95, 104, 192);
+  color: white;
+  transition: 0.55s;
+}
+.Unavailable {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 0, 0);
+  background-color: white;
+  border-radius: 20px;
+  border-color: rgb(255, 0, 0);
+  padding: 1rem;
+  font-size: 1rem;
+  max-width: max-content;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+}
+/* .Unavailable:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  transition: 0.55s;
+} */
+.Coming_soon {
+  display: flex;
+  justify-content: center;
+  color: rgb(95, 104, 192);
+  background-color: white;
+  border-radius: 20px;
+  border-color: rgb(95, 104, 192);
+  padding: 1rem;
+  font-size: 1rem;
+  max-width: max-content;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+}
+/* .Coming_soon:hover {
+  background-color: rgb(95, 104, 192);
+  color: white;
+  transition: 0.55s;
+} */

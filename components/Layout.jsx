@@ -8,8 +8,6 @@ import React from 'react';
 
 export default function Layout({ children,menuOpen,setMenuOpen,title,keywords,description}) {
     const dispatch = useDispatch();
-    const user = useSelector(state => state.auth.user);
-    const loading = useSelector(state => state.auth.loading);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     useEffect(() => {
         if (dispatch && dispatch !== null && dispatch !== undefined){
