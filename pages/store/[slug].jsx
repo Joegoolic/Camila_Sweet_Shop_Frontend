@@ -40,8 +40,8 @@ export default function ProductPage({prod}) {
             <div className={IndiStyles.product_section_inner}>
                 <div className={IndiStyles.product_section_top}>
                     <div className={IndiStyles.product_section_top_left}>
-                        {/* <img src={urlchanger(prod.Photo)} alt= 'A photo of sweets'/> */}
-                        <img src={prod.Photo} alt= 'A photo of sweets'/>
+                        <img src={urlchanger(prod.Photo)} alt= 'A photo of sweets'/>
+                        {/* <img src={prod.Photo} alt= 'A photo of sweets'/> */}
                     </div>
                     <div className={IndiStyles.product_section_top_mid}>
                         <h3>
